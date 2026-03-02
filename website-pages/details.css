@@ -1,0 +1,403 @@
+/*? Moblie            */
+/* *Root & Reset */
+:root{
+    --main-color: #e28d9b;
+    --light-pink: #ffe9ee;
+    --gray: #f5f5f5;
+    --text: #222;
+    --border-radius: 16px; 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#f8f8f8;
+    padding-bottom:90px;
+}
+
+/* ! Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    background:white;
+    position:sticky;
+    top:0;
+}
+
+header button{
+    background:none;
+    border:none;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+header button:hover{
+    background:#f5f5f5;
+}
+
+.fav-btn.active i{
+    color:#ff2d55;
+}
+
+.fav-btn i{
+    font-size:20px;
+    transition:0.3s;
+}
+
+.back-btn:active{
+    transform:scale(0.9);
+}
+
+/* ! Image */
+.product-image img {
+    width:100%;
+    height:auto;
+}
+
+.container{
+    padding:16px;
+    background:white;
+}
+
+/* ! Badge */
+.badge{
+    background:#ffe5ea;
+    color:#ff2d55;
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.product-title{
+    margin:10px 0;
+    font-size:20px;
+}
+
+
+.rating{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:14px;
+    color:gray;
+}
+
+.stars{
+    color:#f28d9b;
+}
+
+
+/* ! Price */
+.price{
+    font-size:26px;
+    font-weight:bold;
+    color:#f28d9b;
+    margin:10px 0;
+}
+
+/* ! Features*/
+.features{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.feature{
+    flex:1;
+    text-align:center;
+    border:1px solid #eee;
+    padding:10px;
+    border-radius:10px;
+    font-size:13px;
+}
+
+.feature i{
+    color:#f28d9b;
+    display:block;
+    margin-bottom:5px;
+}
+
+/* !  Weight */
+.weight-selection{
+    padding:16px;
+    background:white;
+    margin-top:10px;
+}
+
+.weight-options{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.weight-btn{
+    flex:1;
+    padding:10px;
+    border:1px solid #ddd;
+    background:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.weight-btn.active{
+    border:2px solid #f28d9b;
+    color:#f28d9b;
+}
+
+/* ! Description */
+.description{
+    padding:16px;
+    background:white;
+    margin-top:10px;
+}
+
+.description p{
+    color:gray;
+    font-size:14px;
+    margin-top:8px;
+}
+/* ! Reviews */
+.reviews{
+    padding:16px;
+    background:white;
+    margin-top:10px;
+}
+
+.reviews-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.see-all{
+    color:#ff2d55;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.reviews-content{
+    display:flex;
+}
+
+.review-score h2{
+    font-size:36px;
+}
+
+
+.review-score span{
+    font-size:12px;
+    color:gray;
+}
+
+.review-bars{
+    flex:1;
+    margin-left:15px;
+}
+
+.bar-row{
+    display:flex;
+    align-items:center;
+    margin-bottom:6px;
+    font-size:12px;
+}
+
+.bar{
+    flex:1;
+    height: 6px;
+    background: #eee;
+    border-radius: 10px;
+    margin: 0 6px;
+} 
+
+.fill{
+    height:100%;
+    background:#f67788;
+    border-radius:10px;
+}
+
+.fill-90{
+    width:90%;
+}
+
+.fill-8{
+    width:8%;
+}
+
+.fill-2{
+    width:2%;
+}
+
+/* ! Bottom Bar */
+/* Bottom Bar Container */
+
+.bottom-bar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:white;
+    padding:12px 16px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    box-shadow:0 -4px 15px rgba(0,0,0,0.08);
+    z-index:100;
+}
+
+.qty-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#f5f5f5;
+    padding:6px 12px;
+    border-radius:30px;
+}
+
+.qty-btn{
+    width:32px;
+    height:32px;
+    border:none;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    font-size:12px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    transition:0.2s;
+}
+
+.qty-btn:active{
+    transform:scale(0.9);
+}
+
+.qty-number{
+    font-weight:bold;
+    font-size:16px;
+    min-width:20px;
+    text-align:center;
+}
+
+.cart-btn{
+    flex:1;
+    border:none;
+    background:#ef5066;
+    color:white;
+    padding:14px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    cursor:pointer;
+    box-shadow:0 4px 12px rgba(255,45,85,0.3);
+    transition:0.2s;
+}
+
+.cart-btn:hover{
+    background:#f2485e;
+}
+
+.cart-btn:active{
+    transform:scale(0.97);
+}
+
+body{
+    padding-bottom:90px;
+}
+
+
+@media screen and (min-width: 700px){
+    body{
+        background:#f2f2f2;
+    }
+
+    .product-image,
+    .product-info,
+    .weight-selection,
+    .description,
+    .reviews{
+        max-width:700px;
+        margin:auto;
+        margin-top:10px;
+        border-radius:12px;
+    }
+
+    .feature{
+        font-size:14px;
+        padding:14px;
+    }
+
+    .review-score h2{
+        font-size:42px;
+    }
+
+    .bottom-bar{
+        max-width:700px;
+        left:50%;
+        transform:translateX(-50%);
+        border-radius:16px 16px 0 0;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body{
+        background:#f2f2f2;
+    }
+
+    .product{
+        display:flex;
+        max-width:1100px;
+        margin:auto;
+        gap:30px;
+        margin-top:30px;
+    }
+
+    .product-image{
+        flex:1;
+    }
+
+    .product-image img{
+        border-radius:16px;
+    }
+
+    .product-info{
+        flex:1;
+        border-radius:16px;
+    }
+
+    .weight-selection,
+    .description,
+    .reviews{
+        max-width:1100px;
+        margin:auto;
+        margin-top:15px;
+        border-radius:16px;
+    }
+
+    .bottom-bar{
+        max-width:1100px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+}

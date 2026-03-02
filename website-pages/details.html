@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <!--! Header -->
+    <header>
+        <button class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <h2>Product Details</h2>
+        <button class="fav-btn">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+    </header>
+    <!--! Product Image -->
+    <section class="product-image">
+        <img class="details-img" src="" alt="">
+    </section>
+    <!--! Product Info  -->
+    <section class="product-info container">
+        <span class="badge">BESTSELLER</span>
+        <h1 class="product-title">Signature Strawberry Cake</h1>
+        <div class="rating">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <span>4.9(128 reviews)</span>
+        </div>
+        <div class="price">$45</div>
+        <div class="features">
+            <div class="feature">
+                <i class="fa-solid fa-cake-candles"></i>
+                <span>Freshly Baked</span>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-leaf"></i>
+                <span>Organic Berries</span>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-truck"></i>
+                <span>Fast Delivery</span>
+            </div>
+        </div>
+    <!--! Weight Selection -->
+    <section class="weight-selection">
+        <h3>Select Weight</h3>
+        <div class="weight-options">
+            <button class="weight-btn active" data-price="45">500g</button>
+            <button class="weight-btn" data-price="80">1kg</button>
+        </div>
+    </section>
+    <!--! Description -->
+   <section>
+    <h3>Description</h3>
+    <p class="details-description"></p>
+</section>
+    <!--! Custom Reviews  -->
+    <section class="reviews">
+        <div class="reviews-header">
+            <h3>Customer Reviews</h3>
+            <a href="#" class="see-all">
+                See all <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+        <div class="reviews-content">
+            <div class="review-score">
+                <h2>4.9</h2>
+                <span>out of 5.0</span>
+            </div>
+            <div class="review-bars">
+                <div class="bar-row">
+                    <span>5</span>
+                    <div class="bar">
+                        <div class="fill fill-90"></div>
+                    </div>
+                    <span>90%</span>
+                </div>
+                <div class="bar-row">
+                    <span>4</span>
+                    <div class="bar">
+                        <div class="fill fill-8"></div>
+                    </div>
+                    <span>8%</span>
+                </div>
+                <div class="bar-row">
+                    <span>3</span>
+                    <div class="bar">
+                        <div class="fill fill-2"></div>
+                    </div>
+                    <span>2%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--! Bottom Bar -->
+    <div class="bottom-bar">
+        <div class="qty-box">
+            <button class="qty-btn minus">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+            <span class="qty-number">1</span>
+            <button class="qty-btn plus">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+        <button class="cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+        </button>
+    </div>
+    <!-- <script src="./bootstrap-5.3.8-dist/js/bootstrap.js"></script> -->
+    <script src="details.js"></script>
+</body>
+</html>
