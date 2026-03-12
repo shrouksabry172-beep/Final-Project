@@ -60,7 +60,7 @@ const backBtn = document.querySelector(".back-btn");
 
 if(backBtn){
     backBtn.addEventListener("click", function(){
-        window.location.href = "home.html#cards";
+        window.location.href = "../index.html#cards";
     });
 }
 
